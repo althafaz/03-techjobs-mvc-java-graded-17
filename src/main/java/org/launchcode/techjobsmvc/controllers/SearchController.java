@@ -41,7 +41,7 @@ public class SearchController {
                 jobs = JobData.findAll();
             }
 
-            jobs = JobData.findByValue(searchTerm);
+            jobs = JobData.findByValue(searchTer);
         }
         else {
             jobs = JobData.findByColumnAndValue(searchType, searchTerm);
